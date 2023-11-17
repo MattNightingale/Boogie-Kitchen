@@ -1,0 +1,446 @@
+
+html, body{
+    margin: 0; padding: 0; width: 100%;
+    height: 100%;
+    overflow-x: hidden !important;
+  }
+
+body {
+    background-color: black;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+
+/* Header */
+
+.header {
+    width: 100%;
+}
+
+header {
+    z-index: 5;
+    
+    height: 7rem;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    position: fixed;
+    border-bottom: 1px solid rgb(154, 135, 26);
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+header img {
+    border-right: 1px solid rgb(154, 135, 26);
+    height: 7rem;
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+}
+
+a img {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    height: 3rem;
+}
+
+ul {
+    padding-top: 0.6rem;
+    display: flex;
+}
+
+nav ul a {
+    height: 1.2rem;
+    overflow: hidden;
+    display: inline-block;
+    color: rgb(154, 135, 26);
+    margin: 1.2rem;
+    text-transform: uppercase;
+    font-family: "Chivo Mono";
+    font-size: 1.2rem;
+    
+}
+
+a:hover {
+    transform: scale(1.1); 
+    text-decoration: underline;
+}  
+
+a:active {
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 895px) {
+    header .desktop {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 895px) {
+    header .mobile {
+      display: block;
+    }
+}
+
+@media only screen and (min-width: 895px) {
+    header .mobile {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    header ul {
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
+
+    header li {
+       height: fit-content;
+       border: 1px solid rgb(154, 135, 26);
+    }
+
+    header {
+        height: fit-content;
+    }
+
+    header .mobile {
+        display: none;
+    }
+
+    header a img {
+        display: none;
+    }
+
+    header .desktop {
+        display: inline-block;
+        transform: rotate(90deg);
+        height: 2.9rem;
+        float: left;
+        margin-left: -3rem;
+        border-top: 1px solid rgb(154, 135, 26);
+      }
+
+      nav ul a {
+        margin: 0.5rem;
+      } 
+}
+
+/* mission */
+
+#mission {
+    margin-top: 7rem;
+    width: 100%;
+    height: 35rem;
+    background-image: url(./images/lily-banse--YHSwy6uqvk-unsplash.jpg);
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    align-items: center;    
+    justify-content: space-around;
+}
+
+#missionbox {
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: fit-content;
+    width: 30rem;
+    text-align: center;
+    color: rgb(154, 135, 26);
+    background-color: rgb(31, 31, 31);
+    border: 1px solid rgb(154, 135, 26);
+    border-radius: .3rem;
+}
+
+#missionbox h2 {
+    line-height: 2rem;
+    margin-top: 2rem;
+    font-family: "Noto sans";
+    font-weight: 800;
+    font-size: 2.5rem;
+    
+}
+
+#missionbox h3 {
+    margin-top: 2rem;
+    font-family: "Noto sans";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+#missionbox a {
+    padding: .5rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: azure;
+    font-family: "Chivo Mono";
+    font-weight: bold;
+    border-radius: .3rem;
+}
+
+#missionbox a:hover {
+    transform: scale(1.05); 
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+#missionbox a:active {
+    transform: scale(1);
+}
+
+#missionbox h4 {
+    margin-top: 1rem;
+    font-family: "Noto sans";
+}
+
+@media only screen and (max-width: 680px) {
+    #mission {
+      margin-top: 10rem;
+    }
+
+}
+
+/* Recipes */
+
+#recipes {
+    width: 100%;
+    min-height: fit-content;
+    display: block;
+}
+
+#recipes h2 {
+    line-height: 1.2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: "Noto sans";
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: rgb(154, 135, 26);
+}
+
+#section {
+    width: 100%;
+    height: fit-content;
+    display: flex;   
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recipe img {
+    width: 90%;
+}
+
+.recipe {
+    background-color: rgb(31, 31, 31);
+    padding-top: 1rem;
+    border: 1px solid rgb(154, 135, 26);
+    height: fit-content;
+    max-width: 30%;
+    min-width: 19rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe h3 {
+    color: rgb(154, 135, 26);
+    font-family: "Noto sans";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+.recipe p {
+    color: rgb(154, 135, 26);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.recipe:hover {
+    transform: scale(1.05); 
+    transition: all .2s ease;
+}
+
+/*favourites*/
+
+#favourites {
+    margin-top: 2rem;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(31, 31, 31);
+    padding-bottom: 7rem;
+}
+
+#favourites h2 {
+    line-height: 2rem;
+    padding-top: 2rem;
+    margin: 2rem auto;
+    font-family: "Noto sans";
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: rgb(154, 135, 26);
+}
+
+#favourites h3 {
+    padding: .5rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0rem auto;
+    width: fit-content;
+    background-color: azure;
+    font-family: "Chivo Mono";
+    font-weight: bold;
+    border-radius: .3rem;
+}
+
+
+
+#favourites h3:hover {
+    transform: scale(1.05); 
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+#favourites h3:active {
+    transform: scale(1);
+}
+
+#section2 {
+    margin-top: 2rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;   
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.insta img {
+    width: 100%;
+    min-width: 20rem;
+    height: 100%;
+}
+
+.insta img:hover {
+    transform: scale(1.05); 
+    transition: all .2s ease;
+}
+
+.insta {
+    width: 20%;
+    min-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 680px) {
+    #favourites h3 {
+      font-size: 1.5rem;
+      margin: 0 2rem;
+    }
+}
+/* Team */
+
+#team {
+    margin-top: 2rem;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 3rem;
+}
+
+#team h2 {
+    line-height: 2rem;
+    padding-top: 2rem;
+    margin: 2rem auto;
+    font-family: "Noto sans";
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: rgb(154, 135, 26);
+}
+
+#section3 {
+    margin: 2rem auto;
+    width: 80%;
+    height: fit-content;
+    display: flex;   
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portrait img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+}
+
+.portrait h3 {
+    color: rgb(154, 135, 26);
+    font-family: "Noto sans";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    height: fit-content;
+    margin-bottom: -1rem;
+}
+
+footer h2 {
+    padding-top: 1rem;
+    margin: 0.5rem auto;
+    font-family: "Noto sans";
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(154, 135, 26);
+}
+
+footer h3 {
+    color: rgb(154, 135, 26);
+    font-family: "Noto sans";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+footer h4 {
+    font-size: 0.75rem;
+    color: rgb(154, 135, 26);
+    font-family: "Noto sans";
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
